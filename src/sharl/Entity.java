@@ -11,22 +11,15 @@ import java.util.List;
  */
 public class Entity {
 
-	Integer hp;
-	Integer baseAtk;
-	Integer baseDef;
-	List<String> Statuses;
-	Integer moveSpeed;
-	Integer radius;
-	Integer ID;
+
+	protected String name;
+	protected int hp;
+	protected int baseAtk;
+	protected int baseDef;
+	protected List<IStatusEffect> Statuses;
+	protected int moveSpeed;
+	protected int radius;
+	protected int ID;
 	
-
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

@@ -1,76 +1,98 @@
 package sharl;
 
 public class Item {
-	
-	Integer Atk;
-	Integer Hp;
-	Integer Def;
+
+	int atk;
+	int hp;
+	int def;
+	char drawChar;
 
 	String name;
+
+	
 
 	/**
 	 * @param atk
 	 * @param hp
 	 * @param def
 	 * @param name
+	 * @param drawChar
 	 */
-	public Item(Integer atk, Integer hp, Integer def, String name) {
-		// super();
-		Atk = atk;
-		Hp = hp;
-		Def = def;
+
+	
+	public Item(int atk, int hp, int def, String name, char drawChar) {
+		this.atk = atk;
+		this.hp = hp;
+		this.def = def;
 		this.name = name;
+		this.drawChar = drawChar;
+	}
+	
+	/**
+	 * @return the drawChar
+	 */
+	public char getDrawChar() {
+		return drawChar;
 	}
 
+	
 	/**
-	 * @return the hp
+	 * @param drawChar
+	 *            the drawChar to set
 	 */
-	private int getHp() {
-		return Hp;
-	}
-
-	/**
-	 * @param hp
-	 *            the hp to set
-	 */
-	private void setHp(Integer hp) {
-		Hp = hp;
-	}
-
-	/**
-	 * @return the def
-	 */
-	private int getDef() {
-		return Def;
-	}
-
-	/**
-	 * @param def
-	 *            the def to set
-	 */
-	private void setDef(Integer def) {
-		Def = def;
+	public void setDrawChar(char drawChar) {
+		this.drawChar = drawChar;
 	}
 
 	/**
 	 * @return the atk
 	 */
-	private int getAtk() {
-		return Atk;
+	public int getAtk() {
+		return atk;
 	}
 
 	/**
 	 * @param atk
 	 *            the atk to set
 	 */
-	private void setAtk(Integer atk) {
-		Atk = atk;
+	public void setAtk(int atk) {
+		this.atk = atk;
+	}
+
+	/**
+	 * @return the hp
+	 */
+	public int getHp() {
+		return this.hp;
+	}
+
+	/**
+	 * @param hp
+	 *            the hp to set
+	 */
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	/**
+	 * @return the def
+	 */
+	public int getDef() {
+		return def;
+	}
+
+	/**
+	 * @param def
+	 *            the def to set
+	 */
+	public void setDef(int def) {
+		this.def = def;
 	}
 
 	/**
 	 * @return the name
 	 */
-	private String getName() {
+	public String getName() {
 		return name;
 	}
 
@@ -78,15 +100,25 @@ public class Item {
 	 * @param name
 	 *            the name to set
 	 */
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Item [Atk=" + atk + ", Hp=" + hp + ", Def=" + def + ", name="
+				+ name + "]";
 	}
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

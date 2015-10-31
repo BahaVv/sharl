@@ -1,11 +1,11 @@
 package sharl;
 
 public class Equipped {
-	
-	Item primary;
-	Item offHand;
-	Item head;
-	Item chest;
+
+	Item Primary;
+	Item OffHand;
+	Item Head;
+	Item Chest;
 	Item Feet;
 	Item Accessory;
 	
@@ -17,80 +17,80 @@ public class Equipped {
 	 * @param feet
 	 * @param accessory
 	 */
-	public Equipped(Item primary, Item offHand, Item head, Item chest, Item feet, Item accessory) {
-		//super();
-		this.primary = primary;
-		this.offHand = offHand;
-		this.head = head;
-		this.chest = chest;
-		this.Feet = feet;
-		this.Accessory = accessory;
+	public Equipped(Item primary, Item offHand, Item head, Item chest,
+			Item feet, Item accessory) {
+		Primary = primary;
+		OffHand = offHand;
+		Head = head;
+		Chest = chest;
+		Feet = feet;
+		Accessory = accessory;
 	}
 
 	/**
 	 * @return the primary
 	 */
-	private Item getPrimary() {
-		return primary;
+	public Item getPrimary() {
+		return Primary;
 	}
 
 	/**
 	 * @param primary
 	 *            the primary to set
 	 */
-	private void setPrimary(Item primary) {
-		this.primary = primary;
+	public void setPrimary(Item primary) {
+		this.Primary = primary;
 	}
 
 	/**
 	 * @return the offHand
 	 */
-	private Item getOffHand() {
-		return offHand;
+	public Item getOffHand() {
+		return OffHand;
 	}
 
 	/**
 	 * @param offHand
 	 *            the offHand to set
 	 */
-	private void setOffHand(Item offHand) {
-		this.offHand = offHand;
+	public void setOffHand(Item offHand) {
+		this.OffHand = offHand;
 	}
 
 	/**
 	 * @return the head
 	 */
-	private Item getHead() {
-		return head;
+	public Item getHead() {
+		return Head;
 	}
 
 	/**
 	 * @param head
 	 *            the head to set
 	 */
-	private void setHead(Item head) {
-		this.head = head;
+	public void setHead(Item head) {
+		this.Head = head;
 	}
 
 	/**
 	 * @return the chest
 	 */
-	private Item getChest() {
-		return chest;
+	public Item getChest() {
+		return Chest;
 	}
 
 	/**
 	 * @param chest
 	 *            the chest to set
 	 */
-	private void setChest(Item chest) {
-		this.chest = chest;
+	public void setChest(Item chest) {
+		this.Chest = chest;
 	}
 
 	/**
 	 * @return the feet
 	 */
-	private Item getFeet() {
+	public Item getFeet() {
 		return Feet;
 	}
 
@@ -98,14 +98,14 @@ public class Equipped {
 	 * @param feet
 	 *            the feet to set
 	 */
-	private void setFeet(Item feet) {
+	public void setFeet(Item feet) {
 		Feet = feet;
 	}
 
 	/**
 	 * @return the accessory
 	 */
-	private Item getAccessory() {
+	public Item getAccessory() {
 		return Accessory;
 	}
 
@@ -113,16 +113,34 @@ public class Equipped {
 	 * @param accessory
 	 *            the accessory to set
 	 */
-	private void setAccessory(Item accessory) {
+	public void setAccessory(Item accessory) {
 		Accessory = accessory;
 	}
 
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Equipped [Primary=" + Primary + ", OffHand=" + OffHand
+				+ ", Head=" + Head + ", Chest=" + Chest + ", Feet=" + Feet
+				+ ", Accessory=" + Accessory + "]";
+	}
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Equipped equip = new Equipped(new Item(2,3,4,"test1",'c'),new Item(2,3,4,"test2",'h'),new Item(2,3,4,"test3",'t'),new Item(2,3,4,"test4",'t'),new Item(2,3,4,"test5",'t'),new Item(2,3,4,"test5",'t'));
+		
+		System.out.println(equip.toString());
+		
+		equip.setAccessory(new Item(3,6,7,"Hello",'H'));
+		
+		System.out.println(equip.Accessory.toString());
+		
 
 	}
 

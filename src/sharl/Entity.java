@@ -17,7 +17,7 @@ public class Entity {
 	List<String> Statuses;
 	Integer moveSpeed;
 	Integer radius;
-	Integer ID
+	Integer ID;
 	
 
 

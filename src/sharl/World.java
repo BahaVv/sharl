@@ -8,7 +8,7 @@ public class World {
 	List<Entity> entities;
 	
 	public World() {
-		region = new Region();
+		region = new Region(0, 0);
 		entities = new ArrayList<Entity>();
 	}
 	

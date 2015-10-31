@@ -1,5 +1,0 @@
-*Placeholder for Medium Difficulty*
-
--Injuries allowed on first floor
--Shortened light radius
--Player starts with off-hand injury

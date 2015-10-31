@@ -104,11 +104,6 @@ public class Item {
 		this.name = name;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Item [Atk=" + atk + ", Hp=" + hp + ", Def=" + def + ", name="

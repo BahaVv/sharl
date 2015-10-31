@@ -1,5 +1,21 @@
-*Placeholder for Medium Difficulty*
+It's dark. 
 
--Injuries allowed on first floor
--Shortened light radius
--Player starts with off-hand injury
+A flashlight would have been helpful, had you had any choice when you were driven into this cave system. That being said, the wolf you were running from didn't seem terribly open to debate.
+
+Your non-dominant hand still drips with blood, as if to remind you of that fact.
+
+You have caught your breath by this point, however -- and while you can't see even a meter in front of your face, you also can't hear the echoing panting of your earlier pursuant.
+
+That's well and good, but you also don't really know which way you came from. Your primary navigation strategy had been to hug the wall so you didn't run into anything, but as a result you have no real idea of how many twists and turns you took. 
+
+After a hesitant moment you step away from the wall, and wander toward what you believe to be the center of the area you're in. A few steps later, and you stop and hold your breath. Was that your own footstep? You're wearing shoes, so surely you shouldn't be making a 'clack'ing sound...
+
+You feel a rush of air beside your face, followed by the crashing sound of something slamming into the rocks beside you. You feel the cobble spray up from the floor in a wave, and the world around you seems to shake.
+
+As you turn, you can make out just the vaguest of outlines from the moonlight that fliters through cracks in the ceiling above. Whatever it is that stands before you isn't human in any regard -- tall, lumbering, and staring right at you. The sight of its oddly anguled face makes your heart leap in your chest.
+
+As its hulking form begins to wrench its massive club out of the stone beside you, you run. You run as hard and fast as you can. You don't know where you're going, but one thing's for certain:
+
+You need to get the hell out of here.
+
+*All systems allowed on first floor, Shortened light radius, Player starts with off-hand injury*

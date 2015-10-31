@@ -1,8 +1,17 @@
-*Placeholder for Hard Difficulty*
+You're surrounded by monsters. That much you know.
 
--Bleeding allowed
--Injuries allowed
--Shortened light radius
--Player starts injured
--Player starts bleeding
--Player starts w/o off-hand
+Their breathing keeps you continually informed of that. The scraping, plodding footsteps around you keep you constantly on edge. You can't see a damn thing, so it's the only method you have to try to stay away from them.
+
+You have nothing on your person to speak of. No tools at your disposal. If any of them decide they want to kill you and you fail to outrun them, you're gone.
+
+They seem pretty slow for the most part, though, which is perhaps the one fortunate part of this situation.
+
+You hear the sound of mechanics working just as you register the floor giving way beneath your foot. A scream tears out of your throat as cold, rusted metal rends your flesh from either side of your leg. You feel the bone snap with a sickening /crack/.
+
+As you manage to quiet yourself and start scrabbling at the bear trap with your hands, you hear the footsteps around you stop. The metal is slick with your blood, making it hard to get a grip to pry your leg free. 
+
+You can hear them approaching now, over your trembling, pain-labored breathing.
+
+Tonight is the night you die.
+
+*Shortened light radius. Monster spwan rate increased. Player starts immobilized. Player starts with leg injury. Player starts bleeding.*

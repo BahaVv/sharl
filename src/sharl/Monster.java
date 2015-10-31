@@ -3,7 +3,7 @@ package sharl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Monster {
+public class Monster extends Entity{
 
 	int levelDifficulty;
 	int intelligence;
@@ -16,12 +16,11 @@ public class Monster {
 	 * @param hunter
 	 * @param target
 	 */
-	public Monster(int levelDifficulty, int intelligence, boolean hunter,
-			Entity target) {
+	public Monster(int levelDifficulty, int intelligence, boolean hunter, Entity target) {
 		this.levelDifficulty = levelDifficulty;
 		this.intelligence = intelligence;
 		this.hunter = hunter;
-		this.target = target;
+		this.target = new Entity(target);
 	}
 
 	/**
@@ -99,6 +98,7 @@ public class Monster {
 		Equipped equip = new Equipped(new Item(2,3,4,"test1",'c'),new Item(2,3,4,"test2",'h'),new Item(2,3,4,"test3",'t'),new Item(2,3,4,"test4",'t'),new Item(2,3,4,"test5",'t'),new Item(2,3,4,"test5",'t'));
 		
 		List<IStatusEffect> effects = new ArrayList<IStatusEffect>();
+		effects.add(new Effects.Fire());
 		
 		
 		Entity e = new Entity("test",10,11,13,effects,20,10,'@',equip,new Inventory());

@@ -51,7 +51,24 @@ public class Entity implements IGameLogic {
 		this.lightRadius = lightRadius;
 		this.drawchar = drawchar;
 		this.equip = equip;
-		this.invt=invt;
+		this.invt = invt;
+	}
+
+	public Entity(Entity target) {
+		this.name = target.name;
+		this.baseHP = this.HP = target.baseHP;
+		this.baseAtk = this.atk = target.baseAtk;
+		this.baseDef = this.def = target.baseDef;
+		this.statuses = target.statuses;
+		this.moveSpeed = target.moveSpeed;
+		this.lightRadius = target.lightRadius;
+		this.drawchar = target.drawchar;
+		this.equip = target.equip;
+		this.invt = target.invt;
+	}
+	
+	public Entity(){
+		
 	}
 
 	/**
@@ -260,7 +277,7 @@ public class Entity implements IGameLogic {
 				+ atk + ", def=" + def + ", statuses=" + statuses
 				+ ", moveSpeed=" + moveSpeed + ", lightRadius=" + lightRadius
 				+ ", drawchar=" + drawchar + ", env=" + env + ", invt=" + invt
-				+ ", equip=" + equip + "]";
+				+ ", equip=" + equip.toString() + "]";
 	}
 
 }

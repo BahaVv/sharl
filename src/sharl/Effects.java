@@ -1,6 +1,8 @@
 package sharl;
 
 public class Effects extends BaseStatusEffect {
+	
+	String name="Generic Effects"; 
 
 	@Override
 	public boolean shouldRemain(Entity affected) {
@@ -15,7 +17,12 @@ public class Effects extends BaseStatusEffect {
 		
 	}
 
-	public class Poison extends Effects {
+	@Override
+	public String toString() {
+		return "Effects [name=" + name + ", turns=" + turns + "]";
+	}
+
+	public static class Poison extends Effects {
 
 		int endturns = 10;
 		int dmg = 1;
@@ -59,12 +66,25 @@ public class Effects extends BaseStatusEffect {
 
 	}
 
-	public class Fire extends Effects {
-
+	public static class Fire extends Effects {
+		
+		String name="Fire Effect";
 		int endturns = 10;
 		int dmg = 1;
+		
+		
 
 		
+		/* (non-Javadoc)
+		 * @see java.lang.Object#toString()
+		 */
+		@Override
+		public String toString() {
+			return "Fire [name=" + name + ", endturns=" + endturns + ", dmg="
+					+ dmg + ", turns=" + turns + "]";
+		}
+
+
 		@Override
 		public boolean shouldRemain(Entity affected) {
 			if (turns == endturns) {
@@ -103,11 +123,23 @@ public class Effects extends BaseStatusEffect {
 
 	}
 	
-	public class Bleeding extends Effects {
-
+	public static class Bleeding extends Effects {
+		
+		String name="Bleeding Effect";
 		int endturns = 40;
 
 		
+		
+		/* (non-Javadoc)
+		 * @see java.lang.Object#toString()
+		 */
+		@Override
+		public String toString() {
+			return "Bleeding [name=" + name + ", endturns=" + endturns
+					+ ", turns=" + turns + "]";
+		}
+
+
 		@Override
 		public boolean shouldRemain(Entity affected) {
 			if (turns == endturns) {
@@ -141,12 +173,24 @@ public class Effects extends BaseStatusEffect {
 
 	}
 	
-	public class Ice extends Effects {
-
+	public static class Ice extends Effects {
+		
+		String name="Ice Effect";
 		int endturns = 10;
 		int moveSpeed = 2;
-
 		
+		
+		
+		/* (non-Javadoc)
+		 * @see java.lang.Object#toString()
+		 */
+		@Override
+		public String toString() {
+			return "Ice [name=" + name + ", endturns=" + endturns
+					+ ", moveSpeed=" + moveSpeed + ", turns=" + turns + "]";
+		}
+
+
 		@Override
 		public boolean shouldRemain(Entity affected) {
 			if (turns == endturns) {
@@ -182,12 +226,23 @@ public class Effects extends BaseStatusEffect {
 
 	}
 	
-	public class Paralysis extends Effects {
-
+	public static class Paralysis extends Effects {
+		
+		String name="Paralysis Effect";
 		int endturns = 3;
 		int moveSpeed = 0;
-
 		
+		
+		/* (non-Javadoc)
+		 * @see java.lang.Object#toString()
+		 */
+		@Override
+		public String toString() {
+			return "Paralysis [name=" + name + ", endturns=" + endturns
+					+ ", moveSpeed=" + moveSpeed + ", turns=" + turns + "]";
+		}
+
+
 		@Override
 		public boolean shouldRemain(Entity affected) {
 			if (turns == endturns) {

@@ -1,15 +1,10 @@
-package test;
-
+package sharl;
 import sdljava.SDLMain;
 import sdljava.video.SDLSurface;
 import sdljava.video.SDLVideo;
 
-public class TestSDL {
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
+public class Display {
+	public static void main() {
 		String caption = "SDL Test";
 		try {
 			SDLMain.init(SDLMain.SDL_INIT_VIDEO);
@@ -22,5 +17,4 @@ public class TestSDL {
 			SDLMain.quit();
 		}
 	}
-
 }

@@ -14,8 +14,8 @@ public abstract class BaseStatusEffect implements IStatusEffect {
 	}
 
 	@Override
-	public void endEffect(Entity affected) {
-		
+	public void endEffect(Entity affected){
+			
 	}
 	
 	@Override

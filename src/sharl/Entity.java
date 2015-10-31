@@ -23,8 +23,11 @@ public class Entity implements IGameLogic {
 	protected int lightRadius;
 	protected char drawchar;
 	
+	protected int env;
+	
+	Inventory invt;
 	Equipped equip;
-
+	
 	/**
 	 * @param name
 	 * @param baseHP
@@ -38,7 +41,7 @@ public class Entity implements IGameLogic {
 	 */
 	public Entity(String name, int baseHP, int baseAtk, int baseDef,
 			List<IStatusEffect> statuses, int moveSpeed, int lightRadius,
-			char drawchar, Equipped equip) {
+			char drawchar, Equipped equip, Inventory invt) {
 		this.name = name;
 		this.baseHP = this.HP = baseHP;
 		this.baseAtk = this.atk = baseAtk;
@@ -48,6 +51,7 @@ public class Entity implements IGameLogic {
 		this.lightRadius = lightRadius;
 		this.drawchar = drawchar;
 		this.equip = equip;
+		this.invt=invt;
 	}
 
 	/**
@@ -62,6 +66,20 @@ public class Entity implements IGameLogic {
 	 */
 	public void setDrawchar(char drawchar) {
 		this.drawchar = drawchar;
+	}
+
+	/**
+	 * @return the invt
+	 */
+	public Inventory getInvt() {
+		return invt;
+	}
+
+	/**
+	 * @param invt the invt to set
+	 */
+	public void setInvt(Inventory invt) {
+		this.invt = invt;
 	}
 
 	/**
@@ -233,6 +251,16 @@ public class Entity implements IGameLogic {
 		for (IStatusEffect effect : statuses) {
 			effect.tick();
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Entity [name=" + name + ", baseHP=" + baseHP + ", baseAtk="
+				+ baseAtk + ", baseDef=" + baseDef + ", HP=" + HP + ", atk="
+				+ atk + ", def=" + def + ", statuses=" + statuses
+				+ ", moveSpeed=" + moveSpeed + ", lightRadius=" + lightRadius
+				+ ", drawchar=" + drawchar + ", env=" + env + ", invt=" + invt
+				+ ", equip=" + equip + "]";
 	}
 
 }

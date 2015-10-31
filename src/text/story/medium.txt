@@ -18,4 +18,4 @@ As its hulking form begins to wrench its massive club out of the stone beside yo
 
 You need to get the hell out of here.
 
-*All systems allowed on first floor, Shortened light radius, Player starts with off-hand injury*
+*All systems allowed on first floor, Shortened light radius, Player starts with off-hand injury, 7-second turn timer*

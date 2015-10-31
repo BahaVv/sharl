@@ -16,4 +16,4 @@ It's at this exact moment that your flashlight abruptly turns off. You don't hav
 
 Yeah. This was definitely a bad decision.
 
-*No injuries, full HP, full movement speed. No crippling injuries can be inflicted on first floor. Player starts w/ dead flashlight, which is a melee weapon.*
+*No injuries, full HP, full movement speed, no timer. No crippling injuries can be inflicted on first floor. Player starts w/ dead flashlight, which is a melee weapon.*

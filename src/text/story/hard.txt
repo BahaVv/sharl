@@ -14,4 +14,4 @@ You can hear them approaching now, over your trembling, pain-labored breathing.
 
 Tonight is the night you die.
 
-*Shortened light radius. Monster spwan rate increased. Player starts immobilized. Player starts with leg injury. Player starts bleeding.*
+*5 second turn timer. Shortened light radius. Monster spwan rate increased. Player starts immobilized. Player starts with leg injury. Player starts bleeding.*

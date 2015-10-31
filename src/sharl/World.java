@@ -7,8 +7,8 @@ public class World {
 	Region region;
 	List<Entity> entities;
 	
-	public World() {
-		region = new Region(0, 0);
+	public World(int w, int h) {
+		region = new Region(w, h);
 		entities = new ArrayList<Entity>();
 	}
 	

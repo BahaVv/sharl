@@ -76,6 +76,14 @@ public class Vector {
 		return new Vector(x / other, y / other);
 	}
 	
+	public Vector max(Vector other) {
+		return new Vector(Math.max(x, other.x), Math.max(y, other.y));
+	}
+	
+	public Vector min(Vector other) {
+		return new Vector(Math.min(x, other.x), Math.min(y, other.y));
+	}
+	
 	public double dot(Vector other) {
 		return x * other.x + y * other.y;
 	}

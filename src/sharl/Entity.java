@@ -9,24 +9,26 @@ import java.util.List;
  * @author Macri-man
  * 
  */
-public class Entity {
+public class Entity implements IGameLogic {
 
-	Integer hp;
-	Integer baseAtk;
-	Integer baseDef;
-	List<String> Statuses;
-	Integer moveSpeed;
-	Integer radius;
-	Integer ID;
+
+	protected String name;
+	protected int baseHP;
+	protected int baseAtk;
+	protected int baseDef;
+	protected int HP;
+	protected int atk;
+	protected int def;
+	protected List<IStatusEffect> statuses;
+	protected int moveSpeed;
+	protected int lightRadius;
 	
-
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	@Override
+	public void tick() {
+		for(IStatusEffect effect : statuses) {
+			effect.tick();
+		}
 	}
+	
 
 }

@@ -1,6 +1,6 @@
 .classpath
 .settings
-bin/sharl
-bin/text
-bin/test
+bin/sharl/*
+bin/text/*
+bin/test/*
 .class

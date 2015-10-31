@@ -1,6 +1,0 @@
-*Placeholder for Medium Difficulty*
-
--Bleeding allowed
--Injuries allowed
--Shortened light radius
--No off-hand

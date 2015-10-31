@@ -1,6 +1,5 @@
 *Placeholder for Medium Difficulty*
 
--Bleeding allowed
--Injuries allowed
+-Injuries allowed on first floor
 -Shortened light radius
--No off-hand
+-Player starts with off-hand injury

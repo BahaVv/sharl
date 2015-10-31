@@ -4,16 +4,16 @@ import sdljava.video.SDLSurface;
 import sdljava.video.SDLVideo;
 
 public class Display {
-	public static void main() {
+	public SDLSurface screen;
+
+	public Display() {
 		String caption = "SDL Test";
 		try {
 			SDLMain.init(SDLMain.SDL_INIT_VIDEO);
 			SDLVideo.wmSetCaption(caption, caption);
-			SDLSurface screen = SDLVideo.setVideoMode(640, 480, 24, 0);
-			Thread.sleep(2500);
+			screen = SDLVideo.setVideoMode(640, 480, 24, 0);
 		} catch(Exception e) {
 			e.printStackTrace();
-		} finally {
 			SDLMain.quit();
 		}
 	}

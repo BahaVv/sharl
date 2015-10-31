@@ -1,5 +1,12 @@
 package sharl;
 
+import sdljava.SDLException;
+import sdljava.image.SDLImage;
+import sdljava.ttf.SDLTTF;
+import sdljava.ttf.SDLTrueTypeFont;
+import sdljava.video.SDLColor;
+import sdljava.video.SDLSurface;
+
 /*
  * General Structure:
  * 		1) Show title card until key pressed
@@ -27,8 +34,20 @@ package sharl;
 
 // Main function to run game.
 public class Main {
-	public static void main(String[] args){
+	public static void main(String[] args) throws InterruptedException{
 		Display display = new Display();
-		display.main();
+		try {
+			//SDLTTF.init();
+			//SDLTrueTypeFont font = SDLTTF.openFont("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 16);
+			//SDLSurface text = font.renderTextSolid("", new SDLColor(255, 0, 0));
+			//text.blitSurface(display.screen);
+			SDLSurface image = SDLImage.load("/home/csguest/Downloads/Canterlot_Castle_Twilight_Sparkle_1.png");
+			image.blitSurface(display.screen);
+			display.screen.flip();
+			Thread.sleep(5000);
+		} catch (SDLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

@@ -21,7 +21,7 @@ public class Region {
 	}
 	
 	public Rect rect() {
-		return new Rect(0, 0, width(), height())
+		return new Rect(0, 0, width(), height());
 	}
 	
 	public ITile at(int x, int y) {

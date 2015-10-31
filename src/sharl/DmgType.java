@@ -1,5 +1,5 @@
 package sharl;
 
 public enum DmgType {
-	BLUNT, SHARP
+	SLASH, STAB, CRUSH, FIRE, ICE, ELECTRIC, POISON, SUFFOCATE
 }

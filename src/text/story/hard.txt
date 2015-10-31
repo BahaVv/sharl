@@ -1,0 +1,8 @@
+*Placeholder for Hard Difficulty*
+
+-Bleeding allowed
+-Injuries allowed
+-Shortened light radius
+-Player starts injured
+-Player starts bleeding
+-Player starts w/o off-hand
